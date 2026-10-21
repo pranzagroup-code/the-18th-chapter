@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The 18th Chapter — sebuah kejutan ulang tahun ke-18." />
+    <title>The 18th Chapter — Pintu Rahasia</title>
+    <link rel="icon" href="assets/icons/heart.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page-gate">
+    <a class="skip-link" href="#utama">Lewati ke konten</a>
+    <div class="watermark-18" aria-hidden="true">18</div>
+    <div class="particles" id="particles" aria-hidden="true"></div>
+
+    <div class="page">
+      <p class="chapter-index">01 / 04</p>
+      <main id="utama" class="page-main gate">
+        <section class="invite" aria-labelledby="judul-gerbang">
+          <div class="envelope" id="envelope">
+            <div class="invite-inner">
+              <p class="kicker center" data-bind="copy.gateKicker">SEBUAH KEJUTAN KECIL UNTUKMU</p>
+              <div class="ornament" aria-hidden="true">✦</div>
+              <h1 id="judul-gerbang" class="lead center">The 18th Chapter</h1>
+              <p class="muted center italic" data-bind="copy.gateLead">
+                Selamat datang di cerita kecil yang dibuat khusus untukmu.
+              </p>
+              <p class="muted center" data-bind="copy.gateIntro">
+                Empat bab. Satu hari istimewa. Banyak doa untuk masa depanmu.
+              </p>
+              <p class="center" data-bind="copy.gatePrompt">Siap membuka kejutanmu?</p>
+
+              <form class="gate-form" id="gate-form" novalidate>
+                <div class="field">
+                  <label for="secret">Kata rahasia</label>
+                  <div class="input-row">
+                    <input
+                      id="secret"
+                      name="secret"
+                      type="password"
+                      autocomplete="off"
+                      placeholder="Masukkan kata rahasia..."
+                      aria-describedby="gate-error"
+                    />
+                    <button type="button" id="toggle-secret" aria-pressed="false" aria-controls="secret">
+                      Tampilkan
+                    </button>
+                  </div>
+                </div>
+                <p class="form-error" id="gate-error" role="status" aria-live="polite"></p>
+                <div class="stack">
+                  <button class="btn" type="submit">Buka Kejutan</button>
+                  <p class="tiny" data-bind="copy.gateFooter">Halaman ini hanya untukmu. ♡</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

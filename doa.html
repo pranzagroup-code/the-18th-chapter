@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The 18th Chapter — Doa untuk Masa Depanmu</title>
+    <link rel="icon" href="assets/icons/heart.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page-doa">
+    <a class="skip-link" href="#utama">Lewati ke konten</a>
+    <div class="watermark-18" aria-hidden="true">18</div>
+    <div class="particles" id="egg-particles" aria-hidden="true"></div>
+
+    <div class="page">
+      <p class="chapter-index">04 / 04</p>
+      <main id="utama" class="page-main stack">
+        <p class="kicker" data-bind="copy.prayerChapter">BAB 04 — SEBUAH DOA</p>
+        <h1 class="lead center" data-bind="copy.prayerLead">Untuk masa depanmu.</h1>
+        <p class="muted italic center" data-bind="copy.prayerIntro">
+          Ada hal-hal yang mungkin tidak selalu bisa aku berikan, tetapi selalu bisa aku harapkan untukmu.
+        </p>
+
+        <article class="prayer-card" id="prayer-letter" aria-label="Surat doa"></article>
+
+        <section class="closing-block" id="closing-block">
+          <p class="italic" data-bind="copy.prayerClosing">
+            Untuk semua bab yang sudah kamu lewati, dan semua bab indah yang masih menunggumu.
+          </p>
+          <p data-bind="copy.prayerSignature">Kamu adalah bagian istimewa dari ceritaku. Dan ini baru permulaan. ♡</p>
+          <p class="serif">
+            Selamat ulang tahun ke-<span data-bind="age">18</span>,
+            <span data-bind="nickname">[NAMA_PANGGILAN]</span>.
+          </p>
+          <button
+            class="egg-trigger"
+            id="egg-trigger"
+            type="button"
+            aria-haspopup="dialog"
+            aria-controls="secret-layer"
+            hidden
+          >
+            ✦
+            <span class="visually-hidden">Buka pesan rahasia</span>
+          </button>
+        </section>
+
+        <div class="nav-row">
+          <button class="btn btn-ghost" type="button" id="replay-letter">Baca Surat Ini Lagi</button>
+          <a class="btn" href="index.html">Kembali ke Awal</a>
+        </div>
+      </main>
+    </div>
+
+    <div class="secret-layer" id="secret-layer" role="dialog" aria-modal="true" aria-labelledby="secret-title" hidden>
+      <article class="secret-card">
+        <h2 id="secret-title" class="lead" data-bind="copy.easterKicker">PSST... ADA SATU HAL LAGI. ♡</h2>
+        <div id="easter-letter"></div>
+        <div class="nav-row">
+          <button class="btn" type="button" id="close-secret">Tutup Pesan Rahasia</button>
+        </div>
+      </article>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/doa.js"></script>
+  </body>
+</html>

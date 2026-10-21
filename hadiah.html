@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101014">
+  <meta
+    name="description"
+    content="Sebuah kejutan kecil untuk mimpi yang indah."
+  >
+  <title>The 18th Chapter — Sebuah Kejutan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/hadiah.js" defer></script>
+</head>
+
+<body class="page-hadiah">
+  <a class="skip-link" href="#main-content">Lewati ke konten</a>
+  <div class="particles" id="particles" aria-hidden="true"></div>
+  <div class="watermark-18" aria-hidden="true">18</div>
+
+  <div class="page">
+    <main class="page-main" id="main-content">
+      <section class="gift-stage">
+        <p class="chapter-index" data-bind="copy.giftChapter">
+          BAB 03 — SEBUAH KEJUTAN
+        </p>
+
+        <div class="ornament" aria-hidden="true">✦</div>
+
+        <p class="kicker">SOMETHING SPECIAL FOR YOU</p>
+
+        <h1 class="lead" data-bind="copy.giftLead">
+          Ada sesuatu yang ingin aku tunjukkan padamu.
+        </h1>
+
+        <p class="muted center" data-bind="copy.giftIntro">
+          Kadang, sebuah hadiah bukan hanya tentang benda,
+          tetapi juga tentang mimpi yang membuat kita terus melangkah.
+        </p>
+
+        <div class="gift-wrap">
+          <button
+            class="gift-box"
+            id="gift-box"
+            type="button"
+            aria-label="Buka kotak hadiah"
+            aria-expanded="false"
+            aria-controls="gift-result"
+          >
+            <span class="gift-bow" aria-hidden="true"></span>
+            <span class="gift-lid" aria-hidden="true"></span>
+            <span class="gift-body" aria-hidden="true"></span>
+            <span class="gift-light" aria-hidden="true"></span>
+
+            <span class="gift-inner" aria-hidden="true">
+              <img
+                id="car-mini"
+                src="assets/images/mazda.png"
+                alt=""
+              >
+            </span>
+
+            <span class="confetti" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i><i></i><i></i>
+            </span>
+          </button>
+        </div>
+
+        <p class="tiny center" id="gift-hint" aria-live="polite">
+          Sentuh kotaknya untuk membuka kejutanmu. ♡
+        </p>
+
+        <div id="gift-result" aria-live="polite">
+          <figure class="car-art reveal-only" id="car-figure">
+            <img
+              id="car-image"
+              src="assets/images/mazda.png"
+              alt="Ilustrasi Mazda 3, simbol sebuah mimpi indah"
+              loading="eager"
+            >
+            <figcaption class="tiny center" data-bind="copy.giftCaption">
+              Mazda 3 — a little symbol of a beautiful dream.
+            </figcaption>
+          </figure>
+
+          <div class="mazda-mark reveal-only" aria-hidden="true">
+            <svg
+              class="logo-m"
+              viewBox="0 0 64 64"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <ellipse
+                cx="32"
+                cy="32"
+                rx="25"
+                ry="17"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              />
+              <path
+                d="M16 37 25 22 32 34 39 22 48 37"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span class="tiny">A DREAM TO LOOK FORWARD TO</span>
+          </div>
+
+          <div class="letter-card gift-reveal">
+            <p class="kicker center">A LITTLE NOTE</p>
+            <h2 class="serif center">Untuk sebuah mimpi</h2>
+
+            <div id="gift-letter">
+              <p>
+                Ini bukan janji bahwa semua impian akan langsung menjadi nyata.
+                Ini adalah pengingat bahwa kamu berhak memiliki mimpi,
+                berusaha untuknya, dan menikmati setiap langkah perjalananmu.
+              </p>
+              <p>
+                Semoga suatu hari nanti, kamu bisa berdiri di samping sesuatu
+                yang dulu hanya bisa kamu bayangkan, lalu tersenyum karena
+                kamu tahu seberapa jauh kamu telah melangkah.
+              </p>
+            </div>
+          </div>
+
+          <div class="gift-next">
+            <p class="muted center" data-bind="copy.giftHeadline">
+              Untuk sebuah mimpi yang semoga suatu hari bisa kamu wujudkan. ♡
+            </p>
+
+            <div class="nav-row">
+              <a class="btn" id="go-to-prayer" href="doa.html">
+                Lanjut ke Sebuah Doa ♡
+              </a>
+
+              <button class="btn btn-ghost" id="reset-gift" type="button">
+                Buka Lagi
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <p class="tiny center">BAB 03 DARI 04 · MADE WITH LOVE</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
